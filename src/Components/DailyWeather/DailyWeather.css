@@ -1,0 +1,75 @@
+.dailyWeather{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.dailyWeatherItem{
+    width: 13%;
+height: 250px;
+padding: 15px;
+display: flex;
+gap: 10px;
+flex-direction: column;
+border: 1px solid;
+justify-content: space-around;
+align-items: center;
+text-align: center;
+border-radius: 10px;
+}
+.weatherIcon{
+    font-size: 50px;
+}
+.temps{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: bold;
+}
+.temps span{
+    font-weight: normal;
+    color: grey;
+}
+.date{
+    font-size: 20px;
+}
+.SelectedDailyWeatherItem{
+        width: 14%;
+height: 250px;
+padding: 15px;
+display: flex;
+gap: 10px;
+flex-direction: column;
+border: 1px solid;
+justify-content: space-around;
+align-items: center;
+text-align: center;
+    transform: scale(1.1);
+    transition: 0.3s all ease;
+    border-radius: 10px;
+    box-shadow: 3px 1px 20px 1px;
+}
+.selected{
+    width: 100%;
+}
+.selectedTable{
+    width: 100%;
+    height: 250px;
+    border-collapse: collapse;
+    text-align: center;
+}
+td{
+    border: 1px solid black;
+    width: 5%;
+    font-size: 18px;
+}
+.currentWeather{
+    font-size: 30px;
+    background: linear-gradient();
+}
