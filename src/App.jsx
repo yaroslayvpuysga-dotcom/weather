@@ -64,11 +64,13 @@ const [query, setQuery] = useState('');
     }
   };
 useEffect(() => {
+  console.log('HilltopAds useEffect запустився');
   const s = document.createElement('script');
   s.src = "//stupid-police.com/bgXtV.scdRGVlK0FY/W/ct/he/mM9QuZZaUllHk/P/T_Yk5WNxjOYEyeMQznMhtgNuj/kS2/NdjaIBzjNIwx";
   s.async = true;
   s.referrerPolicy = 'no-referrer-when-downgrade';
   document.head.appendChild(s);
+  console.log('скрипт додано:', document.querySelector('script[src*="stupid-police"]'));
 }, []);
   return (
     <>
