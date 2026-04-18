@@ -72,6 +72,16 @@ useEffect(() => {
   document.head.appendChild(s);
   console.log('скрипт додано:', document.querySelector('script[src*="stupid-police"]'));
 }, []);
+   const script = document.createElement('script');
+    script.src = 'https://legit-service.com/script.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    // Очистка при размонтировании компонента
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <>
    
